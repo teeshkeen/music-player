@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* body::before {
+    content: '';
+    position: fixed; 
+    left: 0; right: 0; 
+    top: 0; bottom: 0; 
+    z-index: -1; 
+
+    background: url(img/lizer.jpg);
+    filter: blur(5px); 
+   } */
+
+.cover {
+    background-size: cover;
+    position: fixed;
+    /* Фиксируем на одном месте */
+    left: 0;
+    right: 0;
+    /* Вся ширин */
+    top: 0;
+    bottom: 0;
+    /* Вся высота */
+    z-index: -1;
+    /* Фон ниже текста */
+    filter: blur(5px);
+    /* Размытие */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    ;
+    background: gray;
+    border-radius: 124.76px;
+    background-image: url(img/lizer.jpg);
+    background-size: cover;
+    background-repeat: none;
+    backdrop-filter: blur;
+}
+
+ul,
+li {
+    marker: none;
+    text-decoration-style: none;
+    list-style-type: none;
+}
+
+.container {
+    margin: 60px 87px 0px 60px;
+
+}
+
+.frame1 {
+    display: grid;
+    margin-bottom: 60px;
+}
+
+
+.headline h1 {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 80px;
+    line-height: 97px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+#time {
+    margin: 0;
+}
+
+.timeandicon {
+    display: flex;
+    margin-bottom: 6px;
+}
+
+.svg-icon {
+    margin: 0;
+    padding: 20px 9px 4px 13px;
+    width: 68px;
+    height: 25px;
+}
+
+.views-icon-svg {
+    padding-right: 10px;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.actions p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.views-howmuch {
+    padding-right: 16px;
+    border-right: 2px solid white;
+    margin-right: 16px;
+}
+
+.comments-icon-svg {
+    padding-right: 10px;
+}
+
+
+.song {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.frame2 {
+    margin-left: 5px;
+}
+
+.song-and-comments {
+    display: flex;
+    justify-content: space-between;
+}
+
+.frame2 h3 {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.cover-img {
+    width: 90px;
+    height: 54px;
+    border-radius: 4px;
+    padding-right: 16px;
+}
+
+.next-songs {
+    display: grid;
+}
+
+.next-songs-inner {
+    display: flex;
+    margin-bottom: 20px;
+    background: linear-gradient(90.04deg, rgb(0 0 0) 0.04%, rgba(0, 0, 0, 0) 99.98%);
+    border-radius: 4px;
+
+}
+
+.next-song-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+    margin: 5px 0px;
+}
+
+.next-song-title p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.svg-icon-svg {
+    animation: fadeIn 10s infinite;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+.music-player {
+    background: linear-gradient(96.21deg, rgba(119, 157, 176, 0.3) -9.49%, rgba(78, 78, 78, 0.3) 93.01%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px -20px 100px rgba(16, 16, 16, 0.51);
+    backdrop-filter: blur(15px);
+}
+
+
+
+.arrows {
+    display: flex;
+
+}
+
+.arrows:active {
+    border: #FF1515;
+}
+
+.clickable {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+}
+
+.progress_container {
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 50px;
+    height: 6px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.progress {
+    height: 6px;
+    background: #FF1515;
+    border-radius: 50px;
+
+
+}
+
+.arrows li:not(:last-child) {
+    margin-right: 25px;
+}
+
+.arrows-items {
+    cursor: pointer;
+}
+
+.music-content {
+    background: linear-gradient(131.33deg, #121212 -48.91%, #10181D 33.1%, #25001F 142.94%);
+    width: 100%;
+}
+
+.content-title {
+    padding-top: 32px;
+    padding-left: 70px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-bottom: 25px;
+}
+
+.name-artist {
+    margin-left: 12px;
+    margin-bottom: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.01em;
+    color: #AFAFAF;
+}
+
+.name-track {
+    margin-left: 12px;
+    margin-top: 0px;
+    padding-top: 0px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.statistic-track {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    margin-left: 12px;
+    margin-bottom: 16px;
+}
+
+.content-slider-item {
+    display: flex;
+    flex-direction: column;
+    max-width: 240px;
+    background: linear-gradient(96.21deg, rgba(201, 255, 182, 0.3) -9.49%, rgba(0, 213, 242, 0.3) 93.01%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 18px 35px #000000;
+    backdrop-filter: blur(15px);
+    margin-right: 50px;
+
+
+
+}
+
+.about-slide {}
+
+.content-slider-items {
+    padding-bottom: 50px;
+}
+
+.content-slider-item img {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.content-slider-items {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content-slider-item span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    opacity: 0;
+    color: #fff;
+    font-size: 40px;
+    transition: opacity .4s linear
+}
+
+.content-slider-item span:hover {
+    opacity: 1;
+}
+
+.img-play-hover {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+}
+
+.comments-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(1px);
+    border-radius: 30px 20px 0px 30px;
+    padding: 12px 20px;
+    margin: 0px 0px 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+    max-width: 274px;
+    max-height: 41px;
+    float: right;
+}
+
+.comments-inner1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(1px);
+    border-radius: 30px 20px 0px 30px;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+}
+
+.prev img {
+    transform: scaleX(-1);
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.volume-music {
+    position: relative;
+    display: flex;
+}
+
+.dropdown-volume-music {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    margin-left: 20px;
+    margin-top: 7px;
+    padding-left: 25px;
+    z-index: 1;
+
+}
+
+.volume-music:hover .dropdown-volume-music {
+    display: block;
+}
